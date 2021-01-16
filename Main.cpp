@@ -7,6 +7,8 @@ struct TreeNode {
 };
 
 #include "172-factorial-trailing-zeroes.h"
+#include "263-ugly-number.h"
+#include "264-ugly-number-2.h"
 #include "297-serialize-and-deserialize-binary-tree.h"
 #include "371-sum-of-two-integers.h"
 
@@ -26,12 +28,13 @@ void try_297()
     auto serialized = c.serialize(&node);
 
     auto deserialized = c.deserialize(serialized);
-
 }
 
 int main()
 {
     auto zeroes = problem_172::trailing_zeroes(100);
+    auto is_ugly = problem_263::is_ugly_number(15);
+    auto nth_ugly = problem_264::nth_ugly_number(10);
     try_297();
     auto sum = problem_371::sum(333, 666);
 }
