@@ -4,7 +4,7 @@
 
 // 371. Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
 
-// Solution:
+// Solution: (complexity O(log N))
 // 1. find intersecting bits of the two integers.
 // 2. find non-intersecting bits of the two integers.
 // 3. shift intersecting part left by 1 (emulating a carry bit).
