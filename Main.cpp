@@ -12,6 +12,7 @@ struct TreeNode {
 #include "297-serialize-and-deserialize-binary-tree.h"
 #include "313-super-ugly-number.h"
 #include "371-sum-of-two-integers.h"
+#include "509-fibonacci-number.h"
 
 void try_297()
 {
@@ -39,4 +40,5 @@ int main()
     try_297();
     auto nth_super_ugly = problem_313::nth_super_ugly_number(12, { 2,7,13,19 });
     auto sum = problem_371::sum(333, 666);
+    auto fib = problem_509::fibonacci(10);
 }
