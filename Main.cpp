@@ -10,6 +10,7 @@ struct TreeNode {
 #include "263-ugly-number.h"
 #include "264-ugly-number-2.h"
 #include "297-serialize-and-deserialize-binary-tree.h"
+#include "313-super-ugly-number.h"
 #include "371-sum-of-two-integers.h"
 
 void try_297()
@@ -36,5 +37,6 @@ int main()
     auto is_ugly = problem_263::is_ugly_number(15);
     auto nth_ugly = problem_264::nth_ugly_number(10);
     try_297();
+    auto nth_super_ugly = problem_313::nth_super_ugly_number(12, { 2,7,13,19 });
     auto sum = problem_371::sum(333, 666);
 }
