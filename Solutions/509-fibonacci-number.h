@@ -10,33 +10,33 @@
 
 namespace problem_509 {
 
-    int fibonacci(int n)
-    {
-        static const auto sqrt_of_5 = sqrt(5);
+inline int fibonacci(int n)
+{
+    static const auto sqrt_of_5 = sqrt(5);
 
-        auto number = pow((1 + sqrt_of_5) / 2, n) - pow((1 - sqrt_of_5) / 2, n);
+    auto number = pow((1 + sqrt_of_5) / 2, n) - pow((1 - sqrt_of_5) / 2, n);
 
-        return static_cast<int>(number / sqrt_of_5);
+    return static_cast<int>(number / sqrt_of_5);
+}
+
+inline int slow_fibbonacci(int n)
+{
+    if (n <= 1)
+        return n;
+    if (n == 2)
+        return 1;
+
+    int current = 0;
+    int previous_1 = 1;
+    int previous_2 = 1;
+
+    for (int i = 3; i <= n; ++i) {
+        current = previous_1 + previous_2;
+        previous_1 = previous_2;
+        previous_2 = current;
     }
 
-    int slow_fibbonacci(int n)
-    {
-        if (n <= 1)
-            return n;
-        if (n == 2)
-            return 1;
-
-        int current = 0;
-        int previous_1 = 1;
-        int previous_2 = 1;
-
-        for (int i = 3; i <= n; ++i) {
-            current = previous_1 + previous_2;
-            previous_1 = previous_2;
-            previous_2 = current;
-        }
-
-        return current;
-    }
+    return current;
+}
 
 }

@@ -8,7 +8,7 @@
 
 namespace problem_263 {
 
-bool is_ugly_number(int x)
+inline bool is_ugly_number(int x)
 {
     if (x < 1)
         return false;

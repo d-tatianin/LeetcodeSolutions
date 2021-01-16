@@ -13,36 +13,36 @@
 
 namespace problem_264 {
 
-    int min_of_3(int x, int y, int z)
-    {
-        return std::min(x, std::min(y, z));
+inline int min_of_3(int x, int y, int z)
+{
+    return std::min(x, std::min(y, z));
+}
+
+inline int nth_ugly_number(int n)
+{
+    if (n <= 0)
+        return 0;
+
+    if (n == 1)
+        return 1;
+
+    std::vector<int> ugly_numbers(n);
+    ugly_numbers[0] = 1;
+
+    int pointer_2 = 0;
+    int pointer_3 = 0;
+    int pointer_5 = 0;
+
+    for (int i = 1; i < n; ++i) {
+        int next_ugly = min_of_3(ugly_numbers[pointer_2] * 2, ugly_numbers[pointer_3] * 3, ugly_numbers[pointer_5] * 5);
+        ugly_numbers[i] = next_ugly;
+
+        if (ugly_numbers[pointer_2] * 2 == next_ugly) pointer_2++;
+        if (ugly_numbers[pointer_3] * 3 == next_ugly) pointer_3++;
+        if (ugly_numbers[pointer_5] * 5 == next_ugly) pointer_5++;
     }
 
-    int nth_ugly_number(int n)
-    {
-        if (n <= 0)
-            return 0;
-
-        if (n == 1)
-            return 1;
-
-        std::vector<int> ugly_numbers(n);
-        ugly_numbers[0] = 1;
-
-        int pointer_2 = 0;
-        int pointer_3 = 0;
-        int pointer_5 = 0;
-
-        for (int i = 1; i < n; ++i) {
-            int next_ugly = min_of_3(ugly_numbers[pointer_2] * 2, ugly_numbers[pointer_3] * 3, ugly_numbers[pointer_5] * 5);
-            ugly_numbers[i] = next_ugly;
-
-            if (ugly_numbers[pointer_2] * 2 == next_ugly) pointer_2++;
-            if (ugly_numbers[pointer_3] * 3 == next_ugly) pointer_3++;
-            if (ugly_numbers[pointer_5] * 5 == next_ugly) pointer_5++;
-        }
-
-        return ugly_numbers.back();
-    }
+    return ugly_numbers.back();
+}
 
 }
