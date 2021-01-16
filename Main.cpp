@@ -6,6 +6,8 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
+#include "15-3sum.h"
+#include "16-3sum-closest.h"
 #include "172-factorial-trailing-zeroes.h"
 #include "263-ugly-number.h"
 #include "264-ugly-number-2.h"
@@ -34,6 +36,9 @@ void try_297()
 
 int main()
 {
+    std::vector<int> vec = { 3, -2, -1 };
+    auto tsum = problem_15::three_sum(vec);
+    auto tsumc = problem_16::three_sum_closest(vec, 5);
     auto zeroes = problem_172::trailing_zeroes(100);
     auto is_ugly = problem_263::is_ugly_number(15);
     auto nth_ugly = problem_264::nth_ugly_number(10);

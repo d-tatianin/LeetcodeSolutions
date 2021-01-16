@@ -4,8 +4,7 @@
 
 // Solution: (complexity O(log N))
 // Since trailing zeroes come from 10, which in turn comes from 5 * 2, we need to calculate how many
-// such multiplications a factorial includes. We can do this by dividing n by five until n is
-// greater than or equal to 5.
+// such multiplications a factorial includes. We can do this by dividing n by five until it becomes smaller than 5.
 
 namespace problem_172 {
 
