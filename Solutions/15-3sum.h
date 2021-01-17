@@ -8,12 +8,12 @@
 // Solution: (complexity O(N^2))
 // 1. Sort the array so we can use two pointers below.
 // 2. For each number in the array:
-// - Find the target sum that we're looking for from two other numbers, aka 0 - array[i]
-// - Start iterating the rest of the array with high and low pointers
-// - if sum of two elements at pointers is less than target we increment the low pointer
-// - if sum of two elements at pointers is greater than target we decrement the high pointer
-// - otherwise we found a match, so push the result into the vector
-// - to avoid duplicates in the array, increment low and decrement high as long as next element == previous
+// - Find the target sum that we're looking for from two other numbers, aka 0 - array[i].
+// - Start iterating the rest of the array with high and low pointers.
+// - if sum of two elements at pointers is less than target we increment the low pointer.
+// - if sum of two elements at pointers is greater than target we decrement the high pointer.
+// - otherwise we found a match, so push the result into the vector.
+// - to avoid duplicates in the array, increment low and decrement high as long as next element == previous.
 
 namespace problem_15 {
 

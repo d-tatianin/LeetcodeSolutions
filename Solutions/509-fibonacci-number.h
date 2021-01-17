@@ -6,7 +6,7 @@
 
 // Solution: (complexity O(log N))
 // Using golden ration to our advantage, math is too complex to describe here.
-// OR using a slower iterative O(N) approach where we keep track of N - 2 & N - 1 values and add them
+// OR using a slower iterative O(N) approach where we keep track of N - 2 & N - 1 values and add them.
 
 namespace problem_509 {
 
