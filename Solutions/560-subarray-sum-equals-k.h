@@ -16,28 +16,28 @@
 
 namespace problem_560 {
 
-    inline int subarray_sum(const std::vector<int> numbers, int k)
-    {
-        int total_sum = 0;
-        int subarray_count = 0;
+inline int subarray_sum(const std::vector<int> numbers, int k)
+{
+    int total_sum = 0;
+    int subarray_count = 0;
 
-        std::unordered_map<int, int> sum_to_frequency;
+    std::unordered_map<int, int> sum_to_frequency;
 
-        // 0 occured once at index -1, needed for cases where we find array[R] such that it is equal k,
-        // otherwise we would skip the L == 0 case.
-        sum_to_frequency[0] = 1;
+    // 0 occured once at index -1, needed for cases where we find array[R] such that it is equal k,
+    // otherwise we would skip the L == 0 case.
+    sum_to_frequency[0] = 1;
 
-        for (auto number : numbers) {
-            total_sum += number;
+    for (auto number : numbers) {
+        total_sum += number;
 
-            auto target = total_sum - k;
+        auto target = total_sum - k;
 
-            if (sum_to_frequency.count(target))
-                subarray_count += sum_to_frequency[target];
+        if (sum_to_frequency.count(target))
+            subarray_count += sum_to_frequency[target];
 
-            sum_to_frequency[total_sum]++;
-        }
-
-        return subarray_count;
+        sum_to_frequency[total_sum]++;
     }
+
+    return subarray_count;
+}
 }
