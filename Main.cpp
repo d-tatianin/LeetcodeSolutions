@@ -22,6 +22,7 @@ struct TreeNode {
 #include "836-rectangle-overlap.h"
 #include "1010-pair-of-songs-divisible-by-60.h"
 #include "1275-find-winner-tic-tac-toe.h"
+#include "1344-angle-between-hands-of-clock.h"
 #include "1544-make-the-string-great.h"
 
 void try_297()
@@ -60,5 +61,6 @@ int main()
     auto ovrl = problem_836::rects_overlap({ 0,0,2,2 }, { 1,1,3,3 });
     auto vals = problem_1010::pair_count_divisible_by_60({ 30,20,150,100,40 });
     auto res = problem_1275::play_tictactoe({ {0, 0}, { 1, 1 }, { 0, 1 }, { 0, 2 }, { 1, 0 }, { 2, 0 } });
+    auto deg = problem_1344::angle_between_clock_hands(12, 30);
     auto str = problem_1544::make_string_good("leEeetcode");
 }
