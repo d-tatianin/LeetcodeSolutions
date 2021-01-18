@@ -16,6 +16,12 @@ struct TreeNode {
 #include "371-sum-of-two-integers.h"
 #include "509-fibonacci-number.h"
 #include "560-subarray-sum-equals-k.h"
+#include "709-to-lower-case.h"
+#include "762-partition-labels.h"
+#include "819-most-common-word.h"
+#include "836-rectangle-overlap.h"
+#include "1010-pair-of-songs-divisible-by-60.h"
+#include "1544-make-the-string-great.h"
 
 void try_297()
 {
@@ -37,6 +43,7 @@ void try_297()
 
 int main()
 {
+    tictactoe(std::vector<std::vector<int>>{ {0, 0}, { 1, 1 }, { 0, 1 }, { 0, 2 }, { 1, 0 }, { 2, 0 }});
     std::vector<int> vec = { 3, -2, -1 };
     auto tsum = problem_15::three_sum(vec);
     auto tsumc = problem_16::three_sum_closest(vec, 5);
@@ -48,4 +55,9 @@ int main()
     auto sum = problem_371::sum(333, 666);
     auto fib = problem_509::fibonacci(10);
     auto count = problem_560::subarray_sum({ 1, 2, 3 }, 1);
+    auto lower = problem_709::to_lower("HELLO World");
+    auto word = problem_819::most_common_word("hello hello word", { "hello" });
+    auto ovrl = problem_836::rect_overlaps({ 0,0,2,2 }, { 1,1,3,3 });
+    auto vals = problem_1010::pair_count_divisible_by_60({ 30,20,150,100,40 });
+    auto str = problem_1544::make_string_good("leEeetcode");
 }
