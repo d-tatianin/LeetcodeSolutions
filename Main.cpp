@@ -23,11 +23,13 @@ struct TreeNode {
 #include "762-partition-labels.h"
 #include "819-most-common-word.h"
 #include "836-rectangle-overlap.h"
+#include "905-sory-array-by-parity.h"
 #include "941-valid-mountain-array.h"
 #include "1010-pair-of-songs-divisible-by-60.h"
 #include "1146-snapshot-array.h"
 #include "1275-find-winner-tic-tac-toe.h"
 #include "1344-angle-between-hands-of-clock.h"
+#include "1352-product-of-the-last-k-numbers.h"
 #include "1544-make-the-string-great.h"
 
 void try_116()
@@ -71,6 +73,23 @@ void try_1146()
     auto res = array.get(0, 0);
 }
 
+void try_1352()
+{
+    problem_1352::ProductOfNumbers pr;
+
+    // Example from leetcode
+    pr.add(3);        // [3]
+    pr.add(0);        // [3,0]
+    pr.add(2);        // [3,0,2]
+    pr.add(5);        // [3,0,2,5]
+    pr.add(4);        // [3,0,2,5,4]
+    pr.getProduct(2); // return 20. The product of the last 2 numbers is 5 * 4 = 20
+    pr.getProduct(3); // return 40. The product of the last 3 numbers is 2 * 5 * 4 = 40
+    pr.getProduct(4); // return 0. The product of the last 4 numbers is 0 * 2 * 5 * 4 = 0
+    pr.add(8);        // [3,0,2,5,4,8]
+    pr.getProduct(2); // return 32. The product of the last 2 numbers is 4 * 8 = 32 
+}
+
 int main()
 {
     auto len = problem_3::length_of_longest_substring("abcabcbb");
@@ -90,10 +109,12 @@ int main()
     auto lower = problem_709::to_lower("HELLO World");
     auto word = problem_819::most_common_word("hello hello word", { "hello" });
     auto ovrl = problem_836::rects_overlap({ 0,0,2,2 }, { 1,1,3,3 });
+    vec = problem_905::sort_array_by_parity(vec);
     auto isval = problem_941::valid_mountain_array({ 0,3,2,1 });
     auto vals = problem_1010::pair_count_divisible_by_60({ 30,20,150,100,40 });
     try_1146();
     auto res = problem_1275::play_tictactoe({ {0, 0}, { 1, 1 }, { 0, 1 }, { 0, 2 }, { 1, 0 }, { 2, 0 } });
     auto deg = problem_1344::angle_between_clock_hands(12, 30);
+    try_1352();
     auto str = problem_1544::make_string_good("leEeetcode");
 }
