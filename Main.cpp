@@ -9,6 +9,7 @@ struct TreeNode {
 #include "3-longest-substring-without-repeating.h"
 #include "15-3sum.h"
 #include "16-3sum-closest.h"
+#include "56-merge-intervals.h"
 #include "66-plus-one.h"
 #include "116-populating-next-right.h"
 #include "172-factorial-trailing-zeroes.h"
@@ -97,8 +98,12 @@ int main()
     std::vector<int> vec = { 3, -2, -1 };
     auto tsum = problem_15::three_sum(vec);
     auto tsumc = problem_16::three_sum_closest(vec, 5);
-    std::vector<int> vec1 = { 9, 9, 9 };
-    auto arr = problem_66::plus_one(vec1);
+
+    std::vector<std::vector<int>> vec1 = { {1, 3}, {2, 6}, {8, 10}, {15, 18} };
+    auto merged = problem_56::merge(vec1);
+
+    std::vector<int> vec2 = { 9, 9, 9 };
+    auto arr = problem_66::plus_one(vec2);
     try_116();
     auto zeroes = problem_172::trailing_zeroes(100);
     auto is_ugly = problem_263::is_ugly_number(15);
