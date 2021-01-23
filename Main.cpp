@@ -24,6 +24,7 @@ struct TreeNode {
 #include "709-to-lower-case.h"
 #include "762-partition-labels.h"
 #include "819-most-common-word.h"
+#include "833-find-and-replace-in-string.h"
 #include "836-rectangle-overlap.h"
 #include "905-sory-array-by-parity.h"
 #include "941-valid-mountain-array.h"
@@ -64,6 +65,16 @@ void try_297()
     auto serialized = c.serialize(&node);
 
     auto deserialized = c.deserialize(serialized);
+}
+
+void try_833()
+{
+    std::string S = "abcd";
+    std::vector<int> indexes = { 0, 2 };
+    std::vector<std::string> sources = { "a", "cd" };
+    std::vector<std::string> targets = { "eee", "ffff" };
+
+    auto res = problem_833::find_replace_string(S, indexes, sources, targets);
 }
 
 void try_1146()
@@ -116,6 +127,7 @@ int main()
     auto count = problem_560::subarray_sum({ 1, 2, 3 }, 1);
     auto lower = problem_709::to_lower("HELLO World");
     auto word = problem_819::most_common_word("hello hello word", { "hello" });
+    try_833();
     auto ovrl = problem_836::rects_overlap({ 0,0,2,2 }, { 1,1,3,3 });
     vec = problem_905::sort_array_by_parity(vec);
     auto isval = problem_941::valid_mountain_array({ 0,3,2,1 });
