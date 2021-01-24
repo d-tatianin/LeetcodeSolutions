@@ -1,3 +1,6 @@
+#include <initializer_list>
+#include <ctime>
+
 // TreeNode struct from leetcode
 struct TreeNode {
     int val;
@@ -13,8 +16,27 @@ struct ListNode {
     ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode* next) : val(x), next(next) {}
-    
 };
+
+ListNode* make_list(std::initializer_list<int> numbers)
+{
+
+    ListNode* head = nullptr;
+    ListNode* curr = nullptr;
+
+    for (auto n : numbers) {
+        if (!head) {
+            head = new ListNode(n);
+            curr = head;
+            continue;
+        }
+
+        curr->next = new ListNode(n);
+        curr = curr->next;
+    }
+
+    return head;
+}
 
 #include "3-longest-substring-without-repeating.h"
 #include "15-3sum.h"
@@ -80,19 +102,18 @@ void try_297()
 
 void try_382()
 {
-    ListNode l;
-    l.val = 1;
+    auto list = make_list({ 1, 2, 3, 4, 5, 6, 7, 8, 9 });
 
-    ListNode l1;
-    l1.val = 2;
-    l1.next = &l;
+    problem_382::Solution s(list);
+    srand(time(nullptr));
 
-    ListNode l2;
-    l2.val = 3;
-    l2.next = &l1;
-
-    problem_382::Solution s(&l2);
     auto r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
     r = s.get_random();
 }
 
@@ -152,6 +173,7 @@ int main()
     try_297();
     auto nth_super_ugly = problem_313::nth_super_ugly_number(12, { 2,7,13,19 });
     auto sum = problem_371::sum(333, 666);
+    try_382();
     auto fib = problem_509::fibonacci(10);
     auto count = problem_560::subarray_sum({ 1, 2, 3 }, 1);
     auto lower = problem_709::to_lower("HELLO World");
