@@ -6,6 +6,16 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
+// ListNode struct from leetcode
+struct ListNode {
+    int val;
+    ListNode* next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode* next) : val(x), next(next) {}
+    
+};
+
 #include "3-longest-substring-without-repeating.h"
 #include "15-3sum.h"
 #include "16-3sum-closest.h"
@@ -19,6 +29,7 @@ struct TreeNode {
 #include "297-serialize-and-deserialize-binary-tree.h"
 #include "313-super-ugly-number.h"
 #include "371-sum-of-two-integers.h"
+#include "382-linked-list-random-node.h"
 #include "509-fibonacci-number.h"
 #include "560-subarray-sum-equals-k.h"
 #include "709-to-lower-case.h"
@@ -65,6 +76,24 @@ void try_297()
     auto serialized = c.serialize(&node);
 
     auto deserialized = c.deserialize(serialized);
+}
+
+void try_382()
+{
+    ListNode l;
+    l.val = 1;
+
+    ListNode l1;
+    l1.val = 2;
+    l1.next = &l;
+
+    ListNode l2;
+    l2.val = 3;
+    l2.next = &l1;
+
+    problem_382::Solution s(&l2);
+    auto r = s.get_random();
+    r = s.get_random();
 }
 
 void try_833()
