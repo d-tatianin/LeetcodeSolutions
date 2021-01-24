@@ -16,6 +16,7 @@
 #include "509-fibonacci-number.h"
 #include "560-subarray-sum-equals-k.h"
 #include "709-to-lower-case.h"
+#include "724-find-pivot-index.h"
 #include "763-partition-labels.h"
 #include "819-most-common-word.h"
 #include "833-find-and-replace-in-string.h"
@@ -47,6 +48,7 @@
     FOR_PROBLEM(509)       \
     FOR_PROBLEM(560)       \
     FOR_PROBLEM(709)       \
+    FOR_PROBLEM(724)       \
     FOR_PROBLEM(763)       \
     FOR_PROBLEM(819)       \
     FOR_PROBLEM(833)       \
