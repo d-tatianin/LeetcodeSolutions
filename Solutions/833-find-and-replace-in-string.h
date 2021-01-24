@@ -11,9 +11,9 @@
 // - If it's not equal to expected index then we're done with current index.
 // - Otherwise we simply erase the substring we're replacing and then insert the target into its place.
 
-namespace problem_833 {
+PROBLEM(833, "Find And Replace in String") {
 
-inline std::string find_replace_string(std::string& S, std::vector<int>& indexes, std::vector<std::string>& sources, std::vector<std::string>& targets) {
+inline std::string findReplaceString(std::string& S, std::vector<int>& indexes, std::vector<std::string>& sources, std::vector<std::string>& targets) {
     std::vector<std::pair<int, int>> sorted;
 
     for (int i = 0; i < indexes.size(); ++i)
@@ -32,6 +32,16 @@ inline std::string find_replace_string(std::string& S, std::vector<int>& indexes
     }
 
     return S;
+}
+
+TRY_SOLVE()
+{
+    std::string S = "abcd";
+    std::vector<int> indexes = { 0, 2 };
+    std::vector<std::string> sources = { "a", "cd" };
+    std::vector<std::string> targets = { "eee", "ffff" };
+
+    auto res = findReplaceString(S, indexes, sources, targets);
 }
 
 }

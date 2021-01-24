@@ -15,9 +15,9 @@
 // - Record the current character as seen at current index.
 // - If current subarray is bigger than the biggest, record the new length.
 
-namespace problem_3 {
+PROBLEM(3, "Longest Substring Without Repeating Characters") {
 
-inline int length_of_longest_substring(const std::string& s) {
+inline int lengthOfLongestSubstring(const std::string& s) {
     std::unordered_map<char, int> char_to_last_seen_index;
     int longest_subarray = 0;
     int start = -1;
@@ -33,6 +33,11 @@ inline int length_of_longest_substring(const std::string& s) {
     }
 
     return longest_subarray;
+}
+
+TRY_SOLVE()
+{
+    auto len = lengthOfLongestSubstring("abcabcbb");
 }
 
 }

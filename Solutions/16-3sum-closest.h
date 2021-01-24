@@ -10,9 +10,9 @@
 // Same idea as 3sum, but we have a variable instead of a vector.
 // For each sum we check if it's closer to the number than our previous sum, if it is we record it.
 
-namespace problem_16 {
+PROBLEM(16, "3Sum Closest") {
 
-inline int three_sum_closest(std::vector<int>& nums, int target) {
+inline int threeSumClosest(std::vector<int>& nums, int target) {
     if (nums.size() < 3)
         return 0;
 
@@ -45,6 +45,13 @@ inline int three_sum_closest(std::vector<int>& nums, int target) {
     }
 
     return target - best_delta;
+}
+
+TRY_SOLVE()
+{
+    std::vector<int> v = { -1, 2, 1, -4 };
+
+    auto res = threeSumClosest(v, 1);
 }
 
 }

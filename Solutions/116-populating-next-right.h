@@ -8,14 +8,7 @@
 // - Switch to the next node of current.
 // - If current doesn't have next, switch to the left child of the initial node of this level.
 
-namespace problem_116 {
-
-struct Node {
-    int   val;
-    Node* left;
-    Node* right;
-    Node* next;
-};
+PROBLEM(116, "Populating Next Right Pointers in Each Node") {
 
 inline Node* connect(Node* root) {
     auto* current_root = root;
@@ -36,6 +29,18 @@ inline Node* connect(Node* root) {
     }
 
     return root;
+}
+
+TRY_SOLVE()
+{
+    Node n  { 1 };
+    Node n1 { 2 };
+    Node n2 { 3 };
+
+    n.left = &n1;
+    n.right = &n2;
+
+    connect(&n);
 }
 
 }

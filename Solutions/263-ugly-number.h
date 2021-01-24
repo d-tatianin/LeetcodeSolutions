@@ -6,9 +6,9 @@
 // Very simple, just divide the number by 2, 3 and 5 as much as you can.
 // If it is an ugly number you get 1 at the end.
 
-namespace problem_263 {
+PROBLEM(263, "Ugly Number") {
 
-inline bool is_ugly_number(int x)
+inline bool isUgly(int x)
 {
     if (x < 1)
         return false;
@@ -18,6 +18,11 @@ inline bool is_ugly_number(int x)
     while (x % 2 == 0) x /= 2;
 
     return x == 1;
+}
+
+TRY_SOLVE()
+{
+    auto is_ugly = isUgly(15);
 }
 
 }

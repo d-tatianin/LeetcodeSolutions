@@ -1,16 +1,14 @@
 #pragma once
 
-#pragma once
-
 // 509. Write a program to find the nth fibonacci number.
 
 // Solution: (complexity O(log N))
 // Using golden ration to our advantage, math is too complex to describe here.
 // OR using a slower iterative O(N) approach where we keep track of N - 2 & N - 1 values and add them.
 
-namespace problem_509 {
+PROBLEM(509, "Fibonacci Number") {
 
-inline int fibonacci(int n)
+inline int fib(int n)
 {
     static const auto sqrt_of_5 = sqrt(5);
 
@@ -19,7 +17,7 @@ inline int fibonacci(int n)
     return static_cast<int>(number / sqrt_of_5);
 }
 
-inline int slow_fibbonacci(int n)
+inline int slow_fib(int n)
 {
     if (n <= 1)
         return n;
@@ -37,6 +35,12 @@ inline int slow_fibbonacci(int n)
     }
 
     return current;
+}
+
+TRY_SOLVE()
+{
+    auto n = fib(4);
+    auto n1 = slow_fib(4);
 }
 
 }

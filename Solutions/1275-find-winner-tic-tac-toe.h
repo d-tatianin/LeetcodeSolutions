@@ -18,9 +18,9 @@
 // If it's equal to 9 that means all cells are now covered and it's a draw. Pending otherwise.
 
 
-namespace problem_1275 {
+PROBLEM(1275, "Find Winner on a Tic Tac Toe Game") {
 
-inline std::string play_tictactoe(const std::vector<std::vector<int>>& moves) {
+inline std::string tictactoe(const std::vector<std::vector<int>>& moves) {
     int player_one[8] {};
     int player_two[8] {};
 
@@ -44,6 +44,11 @@ inline std::string play_tictactoe(const std::vector<std::vector<int>>& moves) {
     }
 
     return moves.size() == 9 ? "Draw" : "Pending";
+}
+
+TRY_SOLVE()
+{
+    auto res = tictactoe({ {0, 0}, { 1, 1 }, { 0, 1 }, { 0, 2 }, { 1, 0 }, { 2, 0 } });
 }
 
 }

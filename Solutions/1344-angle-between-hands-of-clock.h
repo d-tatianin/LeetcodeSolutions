@@ -11,9 +11,9 @@
 // calculate the rotation the hour hand makes each minute by doing 360 / (12 * 60). That's it,
 // now all that's left is a few simple equations to calculate the angle between the two hands.
 
-namespace problem_1344 {
+PROBLEM(1344, "Angle Between Hands of a Clock") {
 
-double angle_between_clock_hands(int hour, int minutes) {
+double angleClock(int hour, int minutes) {
     int degrees_per_minute_for_minute_hand = 360 / 60;
 
     double degrees_per_hour_for_hour_hand = 360 / 12;
@@ -25,6 +25,11 @@ double angle_between_clock_hands(int hour, int minutes) {
     auto angle = abs(hour_hand_degrees - minute_hand_degrees);
 
     return std::min(angle, 360 - angle);
+}
+
+TRY_SOLVE()
+{
+    auto res = angleClock(12, 30);
 }
 
 }

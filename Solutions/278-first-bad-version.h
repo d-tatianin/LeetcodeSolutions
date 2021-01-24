@@ -10,11 +10,11 @@
 // Solution: (complexity O(log N))
 // Just a slightly modified version of binary search, nothing more.
 
-namespace problem_278 {
+PROBLEM(278, "First Bad Version") {
 
-bool isBadVersion(int n) { return n > 3; }
+inline bool isBadVersion(int n) { return n > 3; }
 
-int first_bad_version(int n) {
+inline int firstBadVersion(int n) {
     auto left = 1;
     auto right = n;
 
@@ -28,6 +28,11 @@ int first_bad_version(int n) {
     }
 
     return left;
+}
+
+TRY_SOLVE()
+{
+    auto res = firstBadVersion(99);
 }
 
 }

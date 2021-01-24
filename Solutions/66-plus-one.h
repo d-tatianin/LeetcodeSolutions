@@ -8,9 +8,9 @@
 // - otherwise increment number and we're done
 // If carry reaches outside the array just push 1 as the first element turning 000 -> 1000
 
-namespace problem_66 {
+PROBLEM(66, "Plus One") {
 
-inline std::vector<int> plus_one(std::vector<int>& digits) {
+inline std::vector<int> plusOne(std::vector<int>& digits) {
     for (auto it = digits.rbegin(); it != digits.rend(); ++it) {
         if (*it == 9) {
             *it = 0;
@@ -28,6 +28,13 @@ inline std::vector<int> plus_one(std::vector<int>& digits) {
     digits.push_back(0);
 
     return digits;
+}
+
+TRY_SOLVE()
+{
+    std::vector<int> vec2 = { 9, 9, 9 };
+
+    auto arr = plusOne(vec2);
 }
 
 }

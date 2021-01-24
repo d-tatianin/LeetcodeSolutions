@@ -20,9 +20,9 @@
 // after XORing non-intersecting with intersecting shifted left -> 0b101 (0b001 ^ 0b100)
 // intersecting bits are now -> 0b000, so we're done
 
-namespace problem_371 {
+PROBLEM(371, "Sum of Two Integers") {
 
-inline int sum(int l, int r)
+inline int getSum(int l, int r)
 {
     // We do this here because shifting negative numbers is undefined behavior as per the C++ standard.
     // This works because 2s complement addition is the same as unsigned addition.
@@ -42,6 +42,11 @@ inline int sum(int l, int r)
     // same reason for memcpy as above
     memcpy(&l, &left, sizeof(l));
     return l;
+}
+
+TRY_SOLVE()
+{
+    auto sum = getSum(-3, 5);
 }
 
 }

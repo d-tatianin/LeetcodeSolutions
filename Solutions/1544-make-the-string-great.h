@@ -15,9 +15,9 @@
 // - If stack top is equal to current character and is different case, we pop it, and skip current character.
 // - Otherwise push current character on top of the stack.
 
-namespace problem_1544 {
+PROBLEM(1544, "Make The String Great") {
 
-std::string make_string_good(const std::string& string) {
+std::string makeGood(const std::string& string) {
     if (string.size() <= 1)
         return string;
 
@@ -38,6 +38,11 @@ std::string make_string_good(const std::string& string) {
     }
 
     return stack;
+}
+
+TRY_SOLVE()
+{
+    auto res = makeGood("leEeetcode");
 }
 
 }

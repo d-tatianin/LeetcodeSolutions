@@ -12,11 +12,16 @@
 // All we have to do is to check that the maximum x1 is smaller than the smallest x2,
 // and that the maximum y1 is smaller than the smallest y2
 
-namespace problem_836 {
+PROBLEM(836, "Rectangle Overlap") {
 
-inline bool rects_overlap(const std::vector<int>& rec1, const std::vector<int>& rec2) {
+inline bool isRectangleOverlap(const std::vector<int>& rec1, const std::vector<int>& rec2) {
     return std::max(rec1[0], rec2[0]) < std::min(rec1[2], rec2[2]) &&
            std::max(rec1[1], rec2[1]) < std::min(rec1[3], rec2[3]);
+}
+
+TRY_SOLVE()
+{
+    auto res = isRectangleOverlap({ 0,0,2,2 }, { 1,1,3,3 });
 }
 
 }

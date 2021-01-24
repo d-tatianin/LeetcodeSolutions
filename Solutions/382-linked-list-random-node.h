@@ -8,7 +8,7 @@
 // so we're gonna use the latter.
 // The algorithm is too long to explain here: https://en.wikipedia.org/wiki/Reservoir_sampling
 
-namespace problem_382 {
+PROBLEM(382, "Linked List Random Node") {
 
 class Solution {
 public:
@@ -39,5 +39,22 @@ public:
 private:
     ListNode* head;
 };
+
+TRY_SOLVE()
+{
+    auto list = make_list({ 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+
+    Solution s(list);
+    srand(static_cast<unsigned int>(time(nullptr)));
+
+    auto r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+    r = s.get_random();
+}
 
 }

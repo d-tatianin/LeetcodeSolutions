@@ -10,9 +10,9 @@
 // Walk down until we meet a number that's not less than the previous.
 // If we ended up at index == size it's a valid mountaint array, otherwise we encounter an invalid number.
 
-namespace problem_941 {
+PROBLEM(941, "Valid Mountain Array")  {
 
-inline bool valid_mountain_array(const std::vector<int>& arr) {
+inline bool validMountainArray(const std::vector<int>& arr) {
     if (arr.size() < 3)
         return false;
 
@@ -28,6 +28,11 @@ inline bool valid_mountain_array(const std::vector<int>& arr) {
         ++index;
 
     return index == arr.size();
+}
+
+TRY_SOLVE()
+{
+    auto res = validMountainArray({ 0,3,2,1 });
 }
 
 }

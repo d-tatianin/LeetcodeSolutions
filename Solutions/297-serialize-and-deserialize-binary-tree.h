@@ -2,13 +2,13 @@
 
 #include <string>
 
-// 371. Serialize and Deserialize Binary Tree.
+// 297. Serialize and Deserialize Binary Tree.
 
 // Solution: (complexity O(N))
 // Walk the tree in preorder while serializing every node as 'val' + ',' and '#,' for null nodes
 // Reconstruct the entire tree by deserializing in preorder following the same rules
 
-namespace problem_297 {
+PROBLEM(297, "Serialize and Deserialize Binary Tree") {
 
 class Codec {
 public:
@@ -96,5 +96,22 @@ private:
         return out;
     }
 };
+
+TRY_SOLVE()
+{
+    Codec c;
+
+    TreeNode node(1);
+    TreeNode node1(2);
+    TreeNode node2(5);
+    TreeNode node3(3);
+
+    node.left = &node1;
+    node.left->left = &node2;
+    node.right = &node3;
+
+    auto serialized = c.serialize(&node);
+    auto deserialized = c.deserialize(serialized);
+}
 
 }

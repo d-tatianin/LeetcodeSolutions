@@ -15,9 +15,9 @@
 // - otherwise we found a match, so push the result into the vector.
 // - to avoid duplicates in the array, increment low and decrement high as long as next element == previous.
 
-namespace problem_15 {
+PROBLEM(15, "3Sum") {
 
-inline std::vector<std::vector<int>> three_sum(std::vector<int>& nums)
+inline std::vector<std::vector<int>> threeSum(std::vector<int>& nums)
 {
     if (nums.size() < 3)
         return {};
@@ -53,6 +53,13 @@ inline std::vector<std::vector<int>> three_sum(std::vector<int>& nums)
     }
 
     return vec;
+}
+
+TRY_SOLVE()
+{
+    std::vector<int> v = { -1, 0, 1, 2, -1, -4 };
+
+    auto res = threeSum(v);
 }
 
 }

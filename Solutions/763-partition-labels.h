@@ -3,7 +3,7 @@
 #include <vector>
 #include <unordered_set>
 
-// 762. A string S of lowercase English letters is given. We want to partition this string into as many parts as possible
+// 763. A string S of lowercase English letters is given. We want to partition this string into as many parts as possible
 //      so that each letter appears in at most one part, and return a list of integers representing the size of these parts.
 
 
@@ -16,9 +16,9 @@
 // - If current character no longer occures in the array, remove it from blocking char set.
 // - If blocking set is empty, record the current seen character count into vector, and reset the counter.
 
-namespace problem_762 {
+PROBLEM(763, "Partition Labels") {
 
-std::vector<int> partition_labels(std::string S) {
+std::vector<int> partitionLabels(std::string S) {
     int char_to_frequency[26]{};
 
     for (char c : S)
@@ -45,6 +45,11 @@ std::vector<int> partition_labels(std::string S) {
     }
 
     return answer;
+}
+
+TRY_SOLVE()
+{
+    auto res = partitionLabels("ababcbacadefegdehijhklij");
 }
 
 }

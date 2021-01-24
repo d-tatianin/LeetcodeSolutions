@@ -11,7 +11,7 @@
 // If we're asked to retrieve a product of k >= size, we know for sure the product at k was zero before we reset the array,
 // so we can just return 0.
 
-namespace problem_1352 {
+PROBLEM(1352, "Product of the Last K Numbers") {
 
 class ProductOfNumbers {
 public:
@@ -37,5 +37,22 @@ public:
 private:
     std::vector<int> products;
 };
+
+TRY_SOLVE()
+{
+    ProductOfNumbers pr;
+
+    // Example from leetcode
+    pr.add(3);        // [3]
+    pr.add(0);        // [3,0]
+    pr.add(2);        // [3,0,2]
+    pr.add(5);        // [3,0,2,5]
+    pr.add(4);        // [3,0,2,5,4]
+    pr.getProduct(2); // return 20. The product of the last 2 numbers is 5 * 4 = 20
+    pr.getProduct(3); // return 40. The product of the last 3 numbers is 2 * 5 * 4 = 40
+    pr.getProduct(4); // return 0. The product of the last 4 numbers is 0 * 2 * 5 * 4 = 0
+    pr.add(8);        // [3,0,2,5,4,8]
+    pr.getProduct(2); // return 32. The product of the last 2 numbers is 4 * 8 = 32 
+}
 
 }
