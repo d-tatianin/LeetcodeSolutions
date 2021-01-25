@@ -8,7 +8,7 @@
 // - if cumulative_sum - current_sum - number == current_sum, we found a pivot
 // - otherwise add current number to current_sum
 
-PROBLEM(724, "Find Pivot Index") {
+SOLUTION_FOR_PROBLEM(724, "Find Pivot Index") {
 
 int pivotIndex(std::vector<int>& nums) {
     int sum = 0;
@@ -27,7 +27,7 @@ int pivotIndex(std::vector<int>& nums) {
     return -1;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     std::vector<int> vec = { 1, 7, 3, 6, 5, 6 };
 

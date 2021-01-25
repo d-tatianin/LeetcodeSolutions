@@ -15,7 +15,7 @@
 // - If stack top is equal to current character and is different case, we pop it, and skip current character.
 // - Otherwise push current character on top of the stack.
 
-PROBLEM(1544, "Make The String Great") {
+SOLUTION_FOR_PROBLEM(1544, "Make The String Great") {
 
 std::string makeGood(const std::string& string) {
     if (string.size() <= 1)
@@ -40,7 +40,7 @@ std::string makeGood(const std::string& string) {
     return stack;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto res = makeGood("leEeetcode");
 }

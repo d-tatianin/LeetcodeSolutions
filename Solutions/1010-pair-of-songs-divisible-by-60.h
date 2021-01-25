@@ -13,7 +13,7 @@
 // - If we've encounter such value before, add the count of occurences to answer.
 // - Increment the count of occurences for the current remainder.
 
-PROBLEM(1010, "Pairs of Songs With Total Durations Divisible by 60") {
+SOLUTION_FOR_PROBLEM(1010, "Pairs of Songs With Total Durations Divisible by 60") {
 
 int numPairsDivisibleBy60(const std::vector<int>& time) {
     int remainder_to_frequency[60] {};
@@ -28,7 +28,7 @@ int numPairsDivisibleBy60(const std::vector<int>& time) {
     return pair_count;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto res = numPairsDivisibleBy60({ 30, 20, 150, 100, 40 });
 }

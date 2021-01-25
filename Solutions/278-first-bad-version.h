@@ -10,11 +10,11 @@
 // Solution: (complexity O(log N))
 // Just a slightly modified version of binary search, nothing more.
 
-PROBLEM(278, "First Bad Version") {
+SOLUTION_FOR_PROBLEM(278, "First Bad Version") {
 
-inline bool isBadVersion(int n) { return n > 3; }
+bool isBadVersion(int n) { return n > 3; }
 
-inline int firstBadVersion(int n) {
+int firstBadVersion(int n) {
     auto left = 1;
     auto right = n;
 
@@ -30,7 +30,7 @@ inline int firstBadVersion(int n) {
     return left;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto res = firstBadVersion(99);
 }

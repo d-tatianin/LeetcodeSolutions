@@ -14,9 +14,9 @@
 // - if target [L - 1] had been seen before R, add the number of occurences of such [L - 1] to answer.
 // - increment the number of occurences for current total sum by 1.
 
-PROBLEM(560, "Subarray Sum Equals K") {
+SOLUTION_FOR_PROBLEM(560, "Subarray Sum Equals K") {
 
-inline int subarraySum(const std::vector<int> numbers, int k)
+int subarraySum(const std::vector<int> numbers, int k)
 {
     int total_sum = 0;
     int subarray_count = 0;
@@ -41,7 +41,7 @@ inline int subarraySum(const std::vector<int> numbers, int k)
     return subarray_count;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto sum = subarraySum({ 1, 2, 3 }, 1);
 }

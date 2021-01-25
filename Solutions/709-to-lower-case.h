@@ -6,9 +6,9 @@
 // Just walk the string and for each char in the range A-Z subtract an offset
 // needed to convert it to lower case.
 
-PROBLEM(709, "To Lower Case") {
+SOLUTION_FOR_PROBLEM(709, "To Lower Case") {
 
-inline std::string toLowerCase(std::string str) {
+std::string toLowerCase(std::string str) {
     // This makes an assumption that characters are ASCII, or at least
     // the fact that the upper case chars have higher codepoints and are contiguos.
     // Alternatively you could set up a hash map for all english letters of mappings from upper to lower.
@@ -22,7 +22,7 @@ inline std::string toLowerCase(std::string str) {
     return str;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto lower = toLowerCase("HELLO World");
 }

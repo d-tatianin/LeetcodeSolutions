@@ -5,12 +5,12 @@
 // Solution: (complexity O(X))
 // Description of the solution goes here...
 
-PROBLEM(PROBLEM_NUMBER, "ProblemName") {
+SOLUTION_FOR_PROBLEM(PROBLEM_NUMBER, "ProblemName") {
 
 // solution goes here...
 
 
-TRY_SOLVE()
+SOLVE()
 {
     // some tests...
 }

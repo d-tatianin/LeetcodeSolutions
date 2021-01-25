@@ -6,9 +6,9 @@
 // Since trailing zeroes come from 10, which in turn comes from 5 * 2, we need to calculate how many
 // such multiplications a factorial includes. We can do this by dividing n by five until it becomes smaller than 5.
 
-PROBLEM(172, "Factorial Trailing Zeroes") {
+SOLUTION_FOR_PROBLEM(172, "Factorial Trailing Zeroes") {
 
-inline int trailingZeroes(int n)
+int trailingZeroes(int n)
 {
     int zeroes = 0;
 
@@ -20,7 +20,7 @@ inline int trailingZeroes(int n)
     return zeroes;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto res = trailingZeroes(100);
 }

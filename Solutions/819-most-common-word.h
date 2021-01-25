@@ -14,9 +14,9 @@
 // - otherwise, if the current word is not empty, add it into the word map and increment frequency
 // - if current word frequency is greater than current best, record it as best and save a pointer to current word
 
-PROBLEM(819, "Most Common Word") {
+SOLUTION_FOR_PROBLEM(819, "Most Common Word") {
 
-inline std::string mostCommonWord(const std::string& paragraph, const std::vector<std::string>& banned) {
+std::string mostCommonWord(const std::string& paragraph, const std::vector<std::string>& banned) {
     std::unordered_map<std::string, size_t> words_to_frequency;
 
     std::unordered_set<std::string> banned_words;
@@ -62,7 +62,7 @@ inline std::string mostCommonWord(const std::string& paragraph, const std::vecto
     return best_word ? *best_word : "";
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto res = mostCommonWord("hello hello word", { "hello" });
 }

@@ -12,7 +12,7 @@
 //   we solve it by picking the maximum end of current & last ranges.
 // - Otherwise emplace current_range and make it last_range.
 
-PROBLEM(56, "Merge Intervals") {
+SOLUTION_FOR_PROBLEM(56, "Merge Intervals") {
 
 std::vector<std::vector<int>> merge(std::vector<std::vector<int>>& intervals) {
     if (intervals.size() == 1)
@@ -42,7 +42,7 @@ std::vector<std::vector<int>> merge(std::vector<std::vector<int>>& intervals) {
     return intervals;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     std::vector<std::vector<int>> v = { {1, 3}, {2, 6}, {8, 10}, {15, 18} };
 

@@ -11,7 +11,7 @@
 // If we're asked to retrieve a product of k >= size, we know for sure the product at k was zero before we reset the array,
 // so we can just return 0.
 
-PROBLEM(1352, "Product of the Last K Numbers") {
+SOLUTION_FOR_PROBLEM(1352, "Product of the Last K Numbers") {
 
 class ProductOfNumbers {
 public:
@@ -38,7 +38,7 @@ private:
     std::vector<int> products;
 };
 
-TRY_SOLVE()
+SOLVE()
 {
     ProductOfNumbers pr;
 

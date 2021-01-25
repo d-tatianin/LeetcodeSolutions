@@ -8,7 +8,7 @@
 // Walk the tree in preorder while serializing every node as 'val' + ',' and '#,' for null nodes
 // Reconstruct the entire tree by deserializing in preorder following the same rules
 
-PROBLEM(297, "Serialize and Deserialize Binary Tree") {
+SOLUTION_FOR_PROBLEM(297, "Serialize and Deserialize Binary Tree") {
 
 class Codec {
 public:
@@ -97,7 +97,7 @@ private:
     }
 };
 
-TRY_SOLVE()
+SOLVE()
 {
     Codec c;
 

@@ -8,9 +8,9 @@
 // - Switch to the next node of current.
 // - If current doesn't have next, switch to the left child of the initial node of this level.
 
-PROBLEM(116, "Populating Next Right Pointers in Each Node") {
+SOLUTION_FOR_PROBLEM(116, "Populating Next Right Pointers in Each Node") {
 
-inline Node* connect(Node* root) {
+Node* connect(Node* root) {
     auto* current_root = root;
 
     while (current_root) {
@@ -31,7 +31,7 @@ inline Node* connect(Node* root) {
     return root;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     Node n  { 1 };
     Node n1 { 2 };

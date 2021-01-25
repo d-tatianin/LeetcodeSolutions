@@ -11,9 +11,9 @@
 // - if number at i is odd, we swap it with number at index j and decrement j
 // - otherwise number at i is even and therefore at its correct position, so increment i
 
-PROBLEM(905, "Sort Array By Parity") {
+SOLUTION_FOR_PROBLEM(905, "Sort Array By Parity") {
 
-inline std::vector<int> sortArrayByParity(std::vector<int>& A) {
+std::vector<int> sortArrayByParity(std::vector<int>& A) {
     if (A.empty())
         return {};
 
@@ -32,7 +32,7 @@ inline std::vector<int> sortArrayByParity(std::vector<int>& A) {
     return A;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     std::vector<int> vec = { 3, 1, 2, 4 };
 

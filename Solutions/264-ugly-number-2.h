@@ -11,14 +11,14 @@
 // For each prime, increment its index into the array if multiplying array[pointer] * prime gives the current smallest ugly number.
 // Note that we might have to increment multiple indicies per iteration, e.g 2 * 3 == 3 * 2.
 
-PROBLEM(264, "Ugly Number II") {
+SOLUTION_FOR_PROBLEM(264, "Ugly Number II") {
 
-inline int min_of_3(int x, int y, int z)
+int min_of_3(int x, int y, int z)
 {
     return std::min(x, std::min(y, z));
 }
 
-inline int nthUglyNumber(int n)
+int nthUglyNumber(int n)
 {
     if (n <= 0)
         return 0;
@@ -45,7 +45,7 @@ inline int nthUglyNumber(int n)
     return ugly_numbers.back();
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto nth = nthUglyNumber(10);
 }

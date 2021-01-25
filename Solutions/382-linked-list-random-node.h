@@ -8,7 +8,7 @@
 // so we're gonna use the latter.
 // The algorithm is too long to explain here: https://en.wikipedia.org/wiki/Reservoir_sampling
 
-PROBLEM(382, "Linked List Random Node") {
+SOLUTION_FOR_PROBLEM(382, "Linked List Random Node") {
 
 class Solution {
 public:
@@ -40,7 +40,7 @@ private:
     ListNode* head;
 };
 
-TRY_SOLVE()
+SOLVE()
 {
     auto list = make_list({ 1, 2, 3, 4, 5, 6, 7, 8, 9 });
 

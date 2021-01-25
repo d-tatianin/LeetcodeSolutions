@@ -1,4 +1,5 @@
 #pragma once
+#include <cmath>
 
 // 509. Write a program to find the nth fibonacci number.
 
@@ -6,9 +7,9 @@
 // Using golden ration to our advantage, math is too complex to describe here.
 // OR using a slower iterative O(N) approach where we keep track of N - 2 & N - 1 values and add them.
 
-PROBLEM(509, "Fibonacci Number") {
+SOLUTION_FOR_PROBLEM(509, "Fibonacci Number") {
 
-inline int fib(int n)
+int fib(int n)
 {
     static const auto sqrt_of_5 = sqrt(5);
 
@@ -17,7 +18,7 @@ inline int fib(int n)
     return static_cast<int>(number / sqrt_of_5);
 }
 
-inline int slow_fib(int n)
+int slow_fib(int n)
 {
     if (n <= 1)
         return n;
@@ -37,7 +38,7 @@ inline int slow_fib(int n)
     return current;
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto n = fib(4);
     auto n1 = slow_fib(4);

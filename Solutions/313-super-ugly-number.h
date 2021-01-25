@@ -5,9 +5,9 @@
 // Solution: (complexity O(N*K))
 // Identical idea to problem 264, just scaled up to fit K primes.
 
-PROBLEM(313, "Super Ugly Number") {
+SOLUTION_FOR_PROBLEM(313, "Super Ugly Number") {
 
-inline int nthSuperUglyNumber(int n, const std::vector<int>& primes)
+int nthSuperUglyNumber(int n, const std::vector<int>& primes)
 {
     if (n <= 0)
         return 0;
@@ -34,7 +34,7 @@ inline int nthSuperUglyNumber(int n, const std::vector<int>& primes)
     return ugly_numbers.back();
 }
 
-TRY_SOLVE()
+SOLVE()
 {
     auto res = nthSuperUglyNumber(12, { 2,7,13,19 });
 }
