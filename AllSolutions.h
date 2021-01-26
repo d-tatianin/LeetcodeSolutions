@@ -36,3 +36,4 @@
 #include "1344-angle-between-hands-of-clock.h"
 #include "1352-product-of-the-last-k-numbers.h"
 #include "1544-make-the-string-great.h"
+#include "1588-sum-of-all-odd-length-subarrays.h"
