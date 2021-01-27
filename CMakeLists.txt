@@ -10,8 +10,9 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE "${OUTPUT_DIRECTORY}")
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG   "${OUTPUT_DIRECTORY}")
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE "${OUTPUT_DIRECTORY}")
 
-include_directories("Solutions")
-add_executable(RunSolutions Main.cpp AllSolutions.h)
+FILE(GLOB SOLUTIONS "${CMAKE_CURRENT_SOURCE_DIR}/Solutions/*h")
+add_executable(RunSolutions Main.cpp SolutionRunner.h AllSolutions.h ${SOLUTIONS})
+target_include_directories(RunSolutions PRIVATE "Solutions")
 
 target_compile_features(RunSolutions PRIVATE cxx_std_17)
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT RunSolutions)

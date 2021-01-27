@@ -5,7 +5,7 @@
 // 1588. Given an array of positive integers arr, calculate the sum of all possible odd-length subarrays.
 
 // Solution: (complexity O(N))
-// We can easily count the number of occurences of the current index in all subarray:
+// We can easily count the number of occurences of the current index in all subarrays:
 // for array [1, 2, 3, 4], the occurences of 3 is:
 // index 0:   |________| -> 3 occurs 2 times in subarrays [1 ... 4], [1 ... 3]
 // index 1:      |_____| -> 3 occurs 2 times in subarrays [2 ... 4], [2 ... 3]
