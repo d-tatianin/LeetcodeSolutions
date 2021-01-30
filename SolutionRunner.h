@@ -92,7 +92,7 @@ public:
         for (auto& number_to_solution : *s_solutions) {
             auto& solution = *number_to_solution.second;
 
-            std::cout << "Running solution for problem[" << solution.number() << "] " << solution.name() << std::endl;
+            std::cout << "Running solution for problem " << solution.number() << " - \"" << solution.name() << "\"" << std::endl;
             solution.run();
         }
 
