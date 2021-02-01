@@ -16,7 +16,7 @@
 
 SOLUTION_FOR_PROBLEM(206, "Reverse Linked List") {
 
-ListNode* reverseList(ListNode * head) {
+ListNode* reverseList(ListNode* head) {
     if (head == nullptr || head->next == nullptr)
         return head;
 
@@ -28,10 +28,26 @@ ListNode* reverseList(ListNode * head) {
     return new_head;
 }
 
+ListNode* reverseListIterative(ListNode* head)
+{
+    ListNode* previous = nullptr;
+    ListNode* current = head;
+
+    while (current) {
+        auto* temp = current->next;
+        current->next = previous;
+        previous = current;
+        current = temp;
+    }
+
+    return previous;
+}
+
 SOLVE()
 {
     auto list = make_list({ 1, 2, 3, 4 });
     auto res = reverseList(list);
+    auto res1 = reverseListIterative(res);
 }
 
 }

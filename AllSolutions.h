@@ -10,6 +10,7 @@
 #include "34-find-first-and-last-pos-of-element.h"
 #include "56-merge-intervals.h"
 #include "66-plus-one.h"
+#include "92-reverse-linked-list-ii.h"
 #include "116-populating-next-right.h"
 #include "125-valid-palindrome.h"
 #include "169-majority-element.h"

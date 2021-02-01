@@ -29,14 +29,14 @@ std::vector<std::string> topKFrequent(std::vector<std::string>& words, int k) {
     for (auto& w : str_to_occurences) {
         pq.emplace(w.first);
 
-        if (pq.size() == k + 1)
+        if (pq.size() == static_cast<size_t>(k + 1))
             pq.pop();
     }
 
     std::vector<std::string> out(k);
 
     for (size_t i = k; i-- > 0;) {
-        out[i] = std::move(pq.top());
+        out[i] = pq.top();
         pq.pop();
     }
 
