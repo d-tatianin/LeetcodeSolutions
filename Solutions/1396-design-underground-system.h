@@ -33,19 +33,18 @@ public:
 
 private:
     struct Stats {
-      int total_time;
-      int times_traveled;
+      int total_time { 0 };
+      int times_traveled { 0 };
     };
 
     struct Customer {
       std::string start_station;
-      int boarded_at;
+      int boarded_at { 0 };
     };
 
     std::unordered_map<int, Customer> m_customers;
     std::unordered_map<std::string, Stats> m_stats;
 };
-
 
 SOLVE()
 {

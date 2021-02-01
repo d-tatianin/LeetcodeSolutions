@@ -28,6 +28,7 @@
 #include "560-subarray-sum-equals-k.h"
 #include "628-max-product-of-three-numbers.h"
 #include "680-valid-palindrome-ii.h"
+#include "692-top-k-frequent-words.h"
 #include "709-to-lower-case.h"
 #include "724-find-pivot-index.h"
 #include "739-daily-temperatures.h"

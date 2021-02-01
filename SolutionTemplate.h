@@ -9,7 +9,6 @@ SOLUTION_FOR_PROBLEM(PROBLEM_NUMBER, "ProblemName") {
 
 // solution goes here...
 
-
 SOLVE()
 {
     // some tests...
