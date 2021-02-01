@@ -26,6 +26,7 @@
 #include "509-fibonacci-number.h"
 #include "557-reverse-words-in-a-string-iii.h"
 #include "560-subarray-sum-equals-k.h"
+#include "628-max-product-of-three-numbers.h"
 #include "680-valid-palindrome-ii.h"
 #include "709-to-lower-case.h"
 #include "724-find-pivot-index.h"
