@@ -1,8 +1,5 @@
 #pragma once
 
-#include <unordered_map>
-#include <map>
-
 // 1146. Implement a SnapshotArray that supports the following interface:
 //       - SnapshotArray(int length) initializes an array - like data structure with the given length.Initially, each element equals 0.
 //       - void set(index, val) sets the element at the given index to be equal to val.

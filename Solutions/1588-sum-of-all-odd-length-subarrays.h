@@ -1,7 +1,5 @@
 #pragma once
 
-#include <vector>
-
 // 1588. Given an array of positive integers arr, calculate the sum of all possible odd-length subarrays.
 
 // Solution: (complexity O(N))

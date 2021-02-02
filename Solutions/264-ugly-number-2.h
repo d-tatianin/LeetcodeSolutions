@@ -1,8 +1,5 @@
 #pragma once
 
-#include <vector>
-#include <algorithm>
-
 // 264. Write a program to find the n-th ugly number.
 
 // Solution: (complexity O(N))

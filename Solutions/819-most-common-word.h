@@ -1,10 +1,5 @@
 #pragma once
 
-#include <string>
-#include <vector>
-#include <unordered_map>
-#include <unordered_set>
-
 // 819. Write a program to check whether a given number is an ugly number.
 
 // Solution: (complexity O(N + M))

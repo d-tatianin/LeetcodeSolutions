@@ -1,9 +1,5 @@
 #pragma once
 
-#include <string>
-#include <algorithm>
-#include <unordered_map>
-
 // 3. Given a string s, find the length of the longest substring without repeating characters.
 
 // Solution: (complexity O(N))

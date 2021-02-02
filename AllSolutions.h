@@ -2,10 +2,26 @@
 
 #include "SolutionRunner.h"
 
+#include <climits>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <deque>
+#include <queue>
+#include <set>
+#include <unordered_set>
+#include <map>
+#include <unordered_map>
+#include <algorithm>
+#include <utility>
+#include <stack>
+
 #include "3-longest-substring-without-repeating.h"
 #include "15-3sum.h"
 #include "16-3sum-closest.h"
+#include "17-letter-combinations-of-phone-num.h"
 #include "24-swap-nodes-in-pairs.h"
+#include "31-next-permutation.h"
 #include "33-search-in-rotated-sorted-array.h"
 #include "34-find-first-and-last-pos-of-element.h"
 #include "56-merge-intervals.h"
@@ -27,6 +43,7 @@
 #include "509-fibonacci-number.h"
 #include "557-reverse-words-in-a-string-iii.h"
 #include "560-subarray-sum-equals-k.h"
+#include "605-can-place-flowers.h"
 #include "628-max-product-of-three-numbers.h"
 #include "680-valid-palindrome-ii.h"
 #include "692-top-k-frequent-words.h"
@@ -46,6 +63,7 @@
 #include "1108-defanging-an-ip-address.h"
 #include "1110-delete-nodes-and-return-forest.h"
 #include "1146-snapshot-array.h"
+#include "1190-reverse-substrings-between-parens.h"
 #include "1200-minimum-absolute-difference.h"
 #include "1275-find-winner-tic-tac-toe.h"
 #include "1315-sum-of-nodes-even-valued-gp.h"

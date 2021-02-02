@@ -1,7 +1,5 @@
 #pragma once
 
-#include <string>
-
 // 297. Serialize and Deserialize Binary Tree.
 
 // Solution: (complexity O(N))

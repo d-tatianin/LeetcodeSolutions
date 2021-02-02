@@ -1,7 +1,5 @@
 #pragma once
 
-#include <queue>
-
 // 692. Given a non-empty list of words, return the k most frequent elements.
 
 // Solution: (complexity O(N Log K))
@@ -29,7 +27,7 @@ std::vector<std::string> topKFrequent(std::vector<std::string>& words, int k) {
     for (auto& w : str_to_occurences) {
         pq.emplace(w.first);
 
-        if (pq.size() == static_cast<size_t>(k + 1))
+        if (pq.size() == static_cast<size_t>(k) + 1)
             pq.pop();
     }
 

@@ -1,5 +1,4 @@
 #pragma once
-#include <cmath>
 
 // 509. Write a program to find the nth fibonacci number.
 
