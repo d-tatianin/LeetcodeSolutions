@@ -20,13 +20,13 @@ bool isCompleteTree(TreeNode* root) {
         if (!node) {
             encountered_null = true;
             continue;
-        } else {
-            if (encountered_null)
-                return false;
-
-            nodes.push(node->left);
-            nodes.push(node->right);
         }
+
+        if (encountered_null)
+            return false;
+
+        nodes.push(node->left);
+        nodes.push(node->right);
     }
 
     return true;
