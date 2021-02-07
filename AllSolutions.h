@@ -46,6 +46,7 @@
 #include "297-serialize-and-deserialize-binary-tree.h"
 #include "300-longest-increasing-subsequence.h"
 #include "313-super-ugly-number.h"
+#include "322-coin-change.h"
 #include "371-sum-of-two-integers.h"
 #include "382-linked-list-random-node.h"
 #include "387-first-unique-character-in-a-string.h"

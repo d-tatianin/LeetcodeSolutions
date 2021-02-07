@@ -14,7 +14,7 @@ public:
     int val;
     std::vector<Node*> children;
 
-    Node() {}
+    Node() : val(0) {}
 
     Node(int _val) {
         val = _val;
