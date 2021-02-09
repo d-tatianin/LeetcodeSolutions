@@ -69,6 +69,7 @@
 #include "833-find-and-replace-in-string.h"
 #include "836-rectangle-overlap.h"
 #include "905-sory-array-by-parity.h"
+#include "917-reverse-only-letters.h"
 #include "937-reorder-data-in-log-files.h"
 #include "941-valid-mountain-array.h"
 #include "958-check-completeness-of-a-bin-tree.h"
