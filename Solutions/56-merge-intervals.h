@@ -3,7 +3,7 @@
 // 56. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals,
 //     and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
-// Solution: (complexity O(log N))
+// Solution: (complexity O(N log N))
 // First we sort the ranges so that they're in increasing order.
 // For each range:
 // - If last_range.end() >= current_range.begin() means we have an overlap
