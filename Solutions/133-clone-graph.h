@@ -64,7 +64,9 @@ Node* cloneGraph(Node* node)
 
 SOLVE()
 {
-    // some tests...
+    Node* root = new Node{ 1, { new Node(2), new Node(3) } };
+
+    auto res = cloneGraph(root);
 }
 
 }

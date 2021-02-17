@@ -16,7 +16,7 @@ std::vector<std::vector<std::string>> groupAnagrams(std::vector<std::string>& st
         std::vector<int> table(26);
 
         for (char c : str)
-            table[c - 'a']++;
+            table[static_cast<size_t>(c) - 'a']++;
 
         std::string out;
         out.reserve(26 * 2);

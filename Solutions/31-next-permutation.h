@@ -6,7 +6,7 @@
 
 // Solution: (complexity O(N))
 // - Find a number such that nums[index] < nums[index + 1]
-// - If such a number doesn't exist, that means we're at teh final permutation, so reset the array by doing a reverse (same as sort() in this case)
+// - If such a number doesn't exist, that means we're at the final permutation, so reset the array by doing a reverse (same as sort() in this case)
 // - Otherwise find the first number in the range [size() - 1, index + 1], such that it's greater than nums[index] (aka upper bound of number).
 // - Swap the number with its upper bound and reverse the subarray from [index + 1, size() - 1].
 
