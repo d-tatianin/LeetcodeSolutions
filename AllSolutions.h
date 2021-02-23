@@ -68,6 +68,7 @@
 #include "387-first-unique-character-in-a-string.h"
 #include "398-random-pick-index.h"
 #include "463-island-perimeter.h"
+#include "504-base-7.h"
 #include "509-fibonacci-number.h"
 #include "557-reverse-words-in-a-string-iii.h"
 #include "560-subarray-sum-equals-k.h"
