@@ -101,6 +101,7 @@
 #include "993-cousins-in-binary-tree.h"
 #include "1010-pair-of-songs-divisible-by-60.h"
 #include "1026-max-diff-between-node-and-anc.h"
+#include "1038-bst-to-greater-sum-tree.h"
 #include "1089-duplicate-zeroes.h"
 #include "1108-defanging-an-ip-address.h"
 #include "1110-delete-nodes-and-return-forest.h"
