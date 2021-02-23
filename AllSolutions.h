@@ -30,6 +30,7 @@
 #include "56-merge-intervals.h"
 #include "66-plus-one.h"
 #include "79-word-search.h"
+#include "81-search-in-rotated-array-ii.h"
 #include "92-reverse-linked-list-ii.h"
 #include "94-binary-tree-inorder-traversal.h"
 #include "102-binary-tree-level-order-traversal.h"
