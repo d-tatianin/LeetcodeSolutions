@@ -50,6 +50,7 @@
 #include "203-remove-linked-list-elements.h"
 #include "206-reverse-linked-list.h"
 #include "208-implement-trie.h"
+#include "235-lca-of-a-binary-search-tree.h"
 #include "238-product-of-array-except-self.h"
 #include "260-single-number-iii.h"
 #include "263-ugly-number.h"
