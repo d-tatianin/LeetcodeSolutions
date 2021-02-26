@@ -15,7 +15,7 @@
 // The idea here is we compare every element against every other element and increment by 1 where nums[j] > nums[i],
 // while tracking the current maximum length.
 
-SOLUTION_FOR_PROBLEM(300, " Longest Increasing Subsequence") {
+SOLUTION_FOR_PROBLEM(300, "Longest Increasing Subsequence") {
 
 int lengthOfLIS(std::vector<int>& nums) {
     std::vector<int> res;

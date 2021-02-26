@@ -8,7 +8,7 @@
 // the solution and use cases can be found here:
 // https://leetcode.com/problems/implement-trie-prefix-tree/solution/
 
-SOLUTION_FOR_PROBLEM(208, " Implement Trie (Prefix Tree)") {
+SOLUTION_FOR_PROBLEM(208, "Implement Trie (Prefix Tree)") {
 
 class Trie {
 public:
