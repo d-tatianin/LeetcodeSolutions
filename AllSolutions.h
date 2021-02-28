@@ -90,6 +90,7 @@
 #include "819-most-common-word.h"
 #include "833-find-and-replace-in-string.h"
 #include "836-rectangle-overlap.h"
+#include "895-maximum-frequency-stack.h"
 #include "905-sory-array-by-parity.h"
 #include "914-x-of-a-kind-in-a-deck-of-cards.h"
 #include "917-reverse-only-letters.h"
