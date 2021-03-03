@@ -60,7 +60,7 @@ std::string to_strings(int num)
     // and then recrusively break down into smaller powers.
     for (int power = 1; power <= 3; ++power) {
         if (num < std::pow(1000, power + 1)) {
-            int order = std::pow(1000, power);
+            int order = static_cast<int>(std::pow(1000, power));
 
             auto str = to_strings(num / order) + " " + over_1000[power - 1];
             auto remainder = num % order;
