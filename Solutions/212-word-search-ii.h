@@ -49,7 +49,7 @@ std::vector<std::string> findWords1(std::vector<std::vector<char>>& board, std::
                 if (seen.count(word))
                     continue;
                 if (board[y][x] == word[0]) {
-                    if (do_check(x, y, board, word, 0))
+                    if (do_check(static_cast<int>(x), static_cast<int>(y), board, word, 0))
                         seen.emplace(word);
                 }
             }
