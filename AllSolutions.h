@@ -43,6 +43,7 @@
 #include "137-single-number-ii.h"
 #include "143-reorder-list.h"
 #include "155-min-stack.h"
+#include "160-intersection-of-two-linked-lists.h"
 #include "169-majority-element.h"
 #include "171-excel-sheet-column-number.h"
 #include "172-factorial-trailing-zeroes.h"
