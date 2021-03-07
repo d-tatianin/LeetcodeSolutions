@@ -109,6 +109,7 @@
 #include "953-verifying-alien-dictionary.h"
 #include "958-check-completeness-of-a-bin-tree.h"
 #include "961-n-repeated-element-in-size-2n-arr.h"
+#include "973-k-closest-points-to-origin.h"
 #include "979-distribute-coins-in-binary-tree.h"
 #include "986-interval-list-intersections.h"
 #include "989-add-to-array-form-of-integer.h"
