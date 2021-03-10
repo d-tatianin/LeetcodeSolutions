@@ -137,7 +137,7 @@ std::vector<std::string> findWords2(std::vector<std::vector<char>>& board, std::
     for (size_t y = 0; y < board.size(); ++y) {
         for (size_t x = 0; x < board[0].size(); ++x) {
             if (trie->next[board[y][x] - 'a'])
-                do_check2(x, y, board, trie, answer);
+                do_check2(static_cast<int>(x), static_cast<int>(y), board, trie, answer);
         }
     }
 
