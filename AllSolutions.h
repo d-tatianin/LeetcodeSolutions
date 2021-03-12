@@ -16,6 +16,8 @@
 #include <utility>
 #include <stack>
 
+#include "1-two-sum.h"
+#include "2-add-two-numbers.h"
 #include "3-longest-substring-without-repeating.h"
 #include "15-3sum.h"
 #include "16-3sum-closest.h"
@@ -38,6 +40,8 @@
 #include "111-minimum-depth-of-binary-tree.h"
 #include "114-flatten-binary-tree-to-linked-list.h"
 #include "116-populating-next-right.h"
+#include "121-best-time-to-buy-and-sell-stocks.h"
+#include "122-best-time-to-buy-and-sell-stocks-ii.h"
 #include "125-valid-palindrome.h"
 #include "133-clone-graph.h"
 #include "136-single-number.h"
@@ -131,6 +135,7 @@
 #include "1190-reverse-substrings-between-parens.h"
 #include "1200-minimum-absolute-difference.h"
 #include "1207-unique-number-of-occurences.h"
+#include "1217-min-cost-to-move-chips.h"
 #include "1249-min-remove-to-make-valid-parens.h"
 #include "1254-number-of-closed-islands.h"
 #include "1275-find-winner-tic-tac-toe.h"

@@ -17,9 +17,9 @@ int search(std::vector<int>& nums, int target) {
     int end = static_cast<int>(nums.size() - 1);
 
     while (begin < end) {
-        while (begin < end && nums[begin] == nums[begin + 1])
+        while (begin < end && nums[begin] == nums[static_cast<size_t>(begin) + 1])
             begin++;
-        while (begin < end && nums[end] == nums[end - 1])
+        while (begin < end && nums[end] == nums[static_cast<size_t>(end) - 1])
             end--;
 
         auto middle = begin + (end - begin) / 2;
