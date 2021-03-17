@@ -20,6 +20,7 @@
 #include "2-add-two-numbers.h"
 #include "3-longest-substring-without-repeating.h"
 #include "4-median-of-two-sorted-arrays.h"
+#include "5-longest-palindromic-substring.h"
 #include "15-3sum.h"
 #include "16-3sum-closest.h"
 #include "17-letter-combinations-of-phone-num.h"
