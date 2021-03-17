@@ -92,6 +92,7 @@
 #include "590-nary-tree-postorder-traversal.h"
 #include "605-can-place-flowers.h"
 #include "617-merge-two-binary-trees.h"
+#include "622-design-circular-queue.h"
 #include "628-max-product-of-three-numbers.h"
 #include "680-valid-palindrome-ii.h"
 #include "690-employee-importance.h"
