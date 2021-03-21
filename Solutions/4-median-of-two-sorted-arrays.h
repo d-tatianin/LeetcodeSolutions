@@ -51,7 +51,7 @@ double findMedianSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2) 
             if ((n1 + n2) % 2)
                 return lmax;
 
-            return (lmax + std::min(right_min1, right_min2)) / 2.0;
+            return (static_cast<long long int>(lmax) + std::min(right_min1, right_min2)) / 2.0;
         }
     }
 

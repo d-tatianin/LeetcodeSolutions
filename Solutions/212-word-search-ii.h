@@ -60,7 +60,7 @@ std::vector<std::string> findWords1(std::vector<std::vector<char>>& board, std::
     ans.reserve(seen.size());
 
     for (auto& word : seen)
-        ans.emplace_back(std::move(word));
+        ans.emplace_back(word);
 
     return ans;
 }
@@ -69,7 +69,7 @@ std::vector<std::string> findWords1(std::vector<std::vector<char>>& board, std::
 
 struct Trie {
     std::string word;
-    Trie* next[26];
+    Trie* next[26] {};
     int subtrees = 0;
 };
 

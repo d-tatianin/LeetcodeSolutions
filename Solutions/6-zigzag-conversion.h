@@ -22,7 +22,7 @@ std::string convert(std::string s, int numRows) {
     for (char c : s) {
         rows[row] += c;
 
-        if (row == 0 || row == numRows - 1)
+        if (row == 0 || row == static_cast<size_t>(numRows) - 1)
             step *= -1;
 
         row += step;
