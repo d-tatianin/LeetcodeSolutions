@@ -5,7 +5,7 @@
 // Solution: (complexity O(1))
 // Just use an array.
 
-SOLUTION_FOR_PROBLEM(1603, "ProblemName") {
+SOLUTION_FOR_PROBLEM(1603, "Design Parking System") {
 
 class ParkingSystem {
 public:

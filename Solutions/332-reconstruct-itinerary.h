@@ -5,13 +5,16 @@
 //      Thus, the itinerary must begin with JFK.
 
 // Solution: (complexity O(N^2))
-// Description of the solution goes here...
+// A typical graph problem. First thing we do is generate a graph of port -> destinations.
+// Then we start recursively flying to each destination (starting at port JFK) in a depth first fashion, and appending
+// the initial port to the answer array after we visited all of its destinations. After we're done we will have a reversed
+// recounstructed itinerary, so we have to reverse it back after we're done.
 
 SOLUTION_FOR_PROBLEM(332, "Reconstruct Itinerary") {
 
 using graph_t = std::unordered_map<std::string, std::multiset<std::string>>;
 
-void fly(const std::string & port, graph_t& graph, std::vector<std::string>&answer)
+void fly(const std::string& port, graph_t& graph, std::vector<std::string>&answer)
 {
     auto& destinations = graph[port];
 

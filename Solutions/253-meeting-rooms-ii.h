@@ -4,7 +4,12 @@
 //      find the minimum number of conference rooms required.
 
 // Solution: (complexity O(N Log N))
-// Description of the solution goes here...
+// 1. Sort intervals in ascending order.
+// 2. Use a heap to find the number of overlapping intervals.
+//    If heap's top interval's end is less than the new interval's begin,
+//    we can afford to remove it from the heap and push the new one in since
+//    there is no overlap between them, thus we only need 1 room for both.
+// 3. Number of items that remains in heap is the number of rooms required.
 
 SOLUTION_FOR_PROBLEM(253, "Meeting Rooms II") {
 

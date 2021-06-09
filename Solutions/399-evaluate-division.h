@@ -21,7 +21,7 @@
 // the relations of X to see if any of them are connected to Y and if they are,
 // we use rule 1 to calculate the division.
 
-SOLUTION_FOR_PROBLEM(399, "ProblemName") {
+SOLUTION_FOR_PROBLEM(399, "Evaluate Division") {
 
 using graph_t = std::unordered_map<std::string, std::unordered_map<std::string, double>>;
 

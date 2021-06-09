@@ -3,7 +3,10 @@
 // 692. Given a non-empty list of words, return the k most frequent elements.
 
 // Solution: (complexity O(N Log K))
-// Description of the solution goes here...
+// First we generate a map of string -> occurences.
+// After that we use a heap to select K most frequent words
+// in log time by using a special comparator, which checks number
+// of occurences of each string.
 
 SOLUTION_FOR_PROBLEM(692, "Top K Frequent Words") {
 

@@ -6,7 +6,7 @@
 // Convert a digit to number, multiply result by 10, add the new digit to result.
 // While doing that check for overflows and many othe edge cases along the way.
 
-SOLUTION_FOR_PROBLEM(8, "ProblemName") {
+SOLUTION_FOR_PROBLEM(8, "String to Integer (atoi)") {
 
 int myAtoi(std::string s) {
     if (s.empty())

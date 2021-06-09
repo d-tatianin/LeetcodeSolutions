@@ -6,7 +6,7 @@
 // Compute a map of char -> position in alphabet.
 // Lexicographically compare words in order.
 
-SOLUTION_FOR_PROBLEM(953, "ProblemName") {
+SOLUTION_FOR_PROBLEM(953, "Verifying an Alien Dictionary") {
 
 bool isAlienSorted(std::vector<std::string>&words, std::string order) {
     if (words.size() < 2)

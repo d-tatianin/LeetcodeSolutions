@@ -10,7 +10,7 @@
 // More of what this problem is actually about, you are supposed to implement a trie
 // and use it to effectively scan for words by removing already seen.
 
-SOLUTION_FOR_PROBLEM(212, "ProblemName") {
+SOLUTION_FOR_PROBLEM(212, "Word Search II") {
 
 // ---------------------------- SOLUTION 1
 

@@ -6,7 +6,7 @@
 // Solution: (complexity O(Log N))
 // Classic binary search.
 
-SOLUTION_FOR_PROBLEM(35, "ProblemName") {
+SOLUTION_FOR_PROBLEM(35, "Search Insert Position") {
 
 int searchInsert(std::vector<int>& nums, int target) {
     if (nums.empty())

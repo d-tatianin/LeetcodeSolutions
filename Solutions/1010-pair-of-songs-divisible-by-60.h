@@ -26,9 +26,27 @@ int numPairsDivisibleBy60(const std::vector<int>& time) {
     return pair_count;
 }
 
+int numaPairsDivisibleBy60(const std::vector<int>& time) {
+    int pairs = 0;
+    std::unordered_map<int, size_t> r_to_count;
+
+    for (size_t i = 0; i < time.size(); ++i) {
+        auto remainder = time[i] % 60;
+
+        if (remainder)
+            remainder = 60 - remainder;
+
+        pairs += r_to_count[remainder];
+        r_to_count[remainder]++;
+    }
+
+    return pairs;
+}
+
 SOLVE()
 {
     auto res = numPairsDivisibleBy60({ 30, 20, 150, 100, 40 });
+    auto res1 = numaPairsDivisibleBy60({ 30, 20, 150, 100, 40 });
 }
 
 }

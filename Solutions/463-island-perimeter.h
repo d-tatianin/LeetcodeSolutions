@@ -7,7 +7,7 @@
 // Do a DFS while marking islands as visited. If we encouter water
 // we increment the counter by 1.
 
-SOLUTION_FOR_PROBLEM(463, "ProblemName") {
+SOLUTION_FOR_PROBLEM(463, "Island Perimeter") {
 
 int get_total_for(int x, int y, std::vector<std::vector<int>>& grid)
 {

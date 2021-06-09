@@ -12,7 +12,7 @@
 // the current range. This means we can merge the two ranges and record their added up length as best answer.
 // We can also increment the length by 1 for the same reason above.
 
-SOLUTION_FOR_PROBLEM(1156, "ProblemName") {
+SOLUTION_FOR_PROBLEM(1156, "Swap For Longest Repeated Character Substring") {
 
 int maxRepOpt1(std::string text) {
     if (text.size() < 2)
