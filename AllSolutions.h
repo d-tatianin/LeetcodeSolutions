@@ -44,6 +44,7 @@
 #include "81-search-in-rotated-array-ii.h"
 #include "92-reverse-linked-list-ii.h"
 #include "94-binary-tree-inorder-traversal.h"
+#include "98-validate-binary-search-tree.h"
 #include "102-binary-tree-level-order-traversal.h"
 #include "111-minimum-depth-of-binary-tree.h"
 #include "114-flatten-binary-tree-to-linked-list.h"
